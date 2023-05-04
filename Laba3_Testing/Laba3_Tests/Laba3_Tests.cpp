@@ -22,6 +22,20 @@ namespace Laba3Tests
 			Assert::AreEqual(5, x);
 		}
 
+		TEST_METHOD(TestRandom2)
+		{
+			//arrange
+			Log* rand = new Log();
+
+			//act
+			int x = rand->randomNumber();
+			int x1 = rand->randomNumber();
+
+			//assert
+			Assert::AreEqual(5, x);
+			Assert::AreEqual(10, x1);
+		}
+
 		TEST_METHOD(TestComparison2)
 		{
 			//arrange

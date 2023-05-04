@@ -3,9 +3,12 @@
 #pragma once
 class Log
 {
+	int r = 5;
 public: 
 	int randomNumber() {
-		return 5;
+		int x = r;
+		r = 10;
+		return x;
 	}
 	int comparison(int a, int b) {
 		return 1;
