@@ -19,7 +19,10 @@ System::Void Laba3Testing::Game::rulesButton_Click(System::Object^ sender, Syste
 
 System::Void Laba3Testing::Game::exitGameButton_Click(System::Object^ sender, System::EventArgs^ e)
 {
-    
+    MainForm^ mainform = gcnew MainForm;
+    this->Hide();
+    mainform->Show();
+
     return System::Void();
 }
 
