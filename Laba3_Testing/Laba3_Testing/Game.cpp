@@ -25,6 +25,9 @@ System::Void Laba3Testing::Game::exitGameButton_Click(System::Object^ sender, Sy
 
 System::Void Laba3Testing::Game::enterButton_Click(System::Object^ sender, System::EventArgs^ e)
 {
-    
+    Log* log = new Log();
+    int x = log->comparison(Convert::ToInt64(answerTB->Text), Convert::ToInt64(hiddenNumberLabel->Text));
+
+    MessageBox::Show(x);
     return System::Void();
 }

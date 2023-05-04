@@ -36,7 +36,7 @@ namespace Laba3Tests
 			Assert::AreEqual(10, x1);
 		}
 
-		TEST_METHOD(TestComparison2)
+		TEST_METHOD(TestComparison1)
 		{
 			//arrange
 			Log* rand = new Log();
@@ -46,6 +46,30 @@ namespace Laba3Tests
 
 			//assert
 			Assert::AreEqual(1, x);
+		}
+
+		TEST_METHOD(TestComparison2)
+		{
+			//arrange
+			Log* rand = new Log();
+
+			//act
+			int x = rand->comparison(2, 2);
+
+			//assert
+			Assert::AreEqual(3, x);
+		}
+
+		TEST_METHOD(TestComparison3)
+		{
+			//arrange
+			Log* rand = new Log();
+
+			//act
+			int x = rand->comparison(3, 2);
+
+			//assert
+			Assert::AreEqual(2, x);
 		}
 	};
 }

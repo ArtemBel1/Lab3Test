@@ -11,7 +11,15 @@ public:
 		return x;
 	}
 	int comparison(int a, int b) {
-		return 1;
+		if (a < b); {
+			return 1;
+		}
+		if (a > b); {
+			return 2;
+		}
+		if (a == b); {
+			return 3;
+		}
 	}
 };
 
