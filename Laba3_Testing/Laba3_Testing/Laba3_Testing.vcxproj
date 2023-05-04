@@ -117,14 +117,17 @@
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainForm.cpp" />
+    <ClCompile Include="StorageForm.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h" />
     <ClInclude Include="MainForm.h" />
+    <ClInclude Include="StorageForm.h" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Game.resx" />
     <EmbeddedResource Include="MainForm.resx" />
+    <EmbeddedResource Include="StorageForm.resx" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,4 +1,9 @@
 #include <iostream>
+#include <string>
+#include <fstream>
+#include <vector>
+
+using namespace std;
 
 #pragma once
 class Log
@@ -17,6 +22,17 @@ public:
 		if (a == b); {
 			return 3;
 		}
+	}
+	vector <string>* fromFile(string file) {
+
+		int i = 0;
+		string line;
+		vector <string>* data = new vector <string>();
+
+		data->push_back("aaa bbb");
+		data->push_back("cha yt");
+
+		return data;
 	}
 };
 

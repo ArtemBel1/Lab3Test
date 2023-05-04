@@ -87,5 +87,18 @@ namespace Laba3Tests
 			//assert
 			Assert::AreEqual(2, x);
 		}
+
+		TEST_METHOD(TestFile1)
+		{
+			//arrange
+			Log* rand = new Log();
+
+			//act
+			vector<std::string>* str = rand->fromFile("yy");
+
+			//assert
+			Assert::AreEqual("aaa bbb", str->at(0).c_str());
+			Assert::AreEqual("cha yt", str->at(1).c_str());
+		}
 	};
 }
