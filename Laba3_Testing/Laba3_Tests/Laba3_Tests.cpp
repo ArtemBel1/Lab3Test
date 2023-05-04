@@ -19,7 +19,8 @@ namespace Laba3Tests
 			int x = rand->randomNumber();
 
 			//assert
-			Assert::AreEqual(5, x);
+			Assert::AreEqual(true, x > 0);
+			Assert::AreEqual(true, x < 21);
 		}
 
 		TEST_METHOD(TestRandom2)
@@ -32,8 +33,23 @@ namespace Laba3Tests
 			int x1 = rand->randomNumber();
 
 			//assert
-			Assert::AreEqual(5, x);
-			Assert::AreEqual(10, x1);
+			Assert::AreEqual(true, x1 > 0);
+			Assert::AreEqual(true, x1 < 21);
+		}
+
+		TEST_METHOD(TestRandom3)
+		{
+			//arrange
+			Log* rand = new Log();
+
+			//act
+			int x = rand->randomNumber();
+			int x1 = rand->randomNumber();
+			int x2 = rand->randomNumber();
+
+			//assert
+			Assert::AreEqual(true, x2 > 0);
+			Assert::AreEqual(true, x2 < 21);
 		}
 
 		TEST_METHOD(TestComparison1)
