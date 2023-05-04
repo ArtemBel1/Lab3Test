@@ -29,8 +29,15 @@ public:
 		string line;
 		vector <string>* data = new vector <string>();
 
-		data->push_back("aaa bbb");
-		data->push_back("cha yt");
+		ifstream in(file);
+		if (in.is_open())
+		{
+			while (getline(in, line))
+			{
+				data->push_back(line);
+			}
+		}
+		in.close();
 
 		return data;
 	}

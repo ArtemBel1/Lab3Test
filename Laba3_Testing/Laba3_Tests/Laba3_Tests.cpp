@@ -94,11 +94,37 @@ namespace Laba3Tests
 			Log* rand = new Log();
 
 			//act
-			vector<std::string>* str = rand->fromFile("yy");
+			vector<std::string>* str = rand->fromFile("data.txt");
 
 			//assert
-			Assert::AreEqual("aaa bbb", str->at(0).c_str());
-			Assert::AreEqual("cha yt", str->at(1).c_str());
+			Assert::AreEqual("ASDFASDF ASDFASDFASF", str->at(0).c_str());
+			Assert::AreEqual("asdfasdf 123513241", str->at(1).c_str());
+		}
+
+		TEST_METHOD(TestFile2)
+		{
+			//arrange
+			Log* rand = new Log();
+
+			//act
+			vector<std::string>* str = rand->fromFile("data1.txt");
+
+			//assert
+			Assert::AreEqual("yetdg ukfhfv", str->at(0).c_str());
+			Assert::AreEqual("fkf7 57", str->at(1).c_str());
+			Assert::AreEqual("yjf 74", str->at(2).c_str());
+		}
+
+		TEST_METHOD(TestFile3)
+		{
+			//arrange
+			Log* rand = new Log();
+
+			//act
+			vector<std::string>* str = rand->fromFile("data2.txt");
+
+			//assert
+			Assert::AreEqual("jyf ydftgf", str->at(0).c_str());
 		}
 	};
 }
